@@ -46,7 +46,7 @@ In MobileNetV2, there are two types of blocks:
 One is a residual block with stride of 1. Another one is a block with stride of 2 for downsizing.
 There are 3 layers for both types of blocks.This time, the first layer is 1×1 convolution with ReLU6.	The second layer is the depthwise convolution.
 The third layer is another 1×1 convolution but without any non-linearity. It is claimed that if RELU is used again, the deep networks only have the power of a linear classifier on the non-zero volume part of the output domain.to the network we imported we added a few fully connected layers of our own.
-  
+  <br> <img src=""report_images/mobile.JPG"> <br>
    
   </li>
   
