@@ -18,17 +18,25 @@ The data you can get for free from www.kaggle.com from the link <a href="https:/
   
    <li>
     <h2>Networks and Architecture</h2>
-    <b>The first configuration</b> was built by us from end to end, the architecture used in this configuration is <li>CNN- Convolutional Neural Network which consists of several layers that implement feature extraction, and then classification.
+    <b>The first configuration</b> was built by us from end to end, the architecture used in this configuration is <li>
+      CNN- Convolutional Neural Network which consists of several layers that implement feature extraction, and then classification.
 The CNN layers:
 Conv2D Layer - The filter parameter means the number of this layer's output filters
 The kernal_size parameter is commonly used 3*3.
 The activation parameter refers to the type of activation function.
 The padding parameter is enabled to zero-padding.
-The input_shape parameter has pixel high and pixel wide and have the 3 color channels: RGB</li>
+The input_shape parameter has pixel high and pixel wide and have the 3 color channels: RGB
+</li>
+<li>
 MaxPool2D Layer - to pool and reduce the dimensionality of the data.
+ </li>
+ <li>
 Flatten Layer -  flatten is used to flatten the input to a 1D vector then passed to dense.
+  </li>
+  <li>
 Dense Layer (The output layer) - the units parameter means that it has 2 nodes one for with and one for without because we want a binary output.
 The activation parameter - we use the RELU and SIGMOID activation functions on our output so that the output for each sample is a probability distribution over the outputs of with and without mask.
+  </li>
 
   </li>
   
