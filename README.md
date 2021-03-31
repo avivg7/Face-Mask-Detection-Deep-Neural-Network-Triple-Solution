@@ -38,6 +38,16 @@ Dense Layer (The output layer) - the units parameter means that it has 2 nodes o
 The activation parameter - we use the RELU and SIGMOID activation functions on our output so that the output for each sample is a probability distribution over the outputs of with and without mask.
   </li> 
    <br> <img src="report_images/unnamed.jpg"><br>
+   <b>The second configuration<b/> is a transfer-learning configuration, in that case we used the MobileNet V2 architecture. 
+MobileNetV2 is a convolutional neural network architecture that seeks to perform well on mobile devices. 
+It is based on an inverted residual structure where the residual connections are between the bottleneck layers.
+We fine-tuned MobileNetV2 on our mask/no mask dataset and obtained a classifier.
+In MobileNetV2, there are two types of blocks:
+One is a residual block with stride of 1. Another one is a block with stride of 2 for downsizing.
+There are 3 layers for both types of blocks.This time, the first layer is 1×1 convolution with ReLU6.	The second layer is the depthwise convolution.
+The third layer is another 1×1 convolution but without any non-linearity. It is claimed that if RELU is used again, the deep networks only have the power of a linear classifier on the non-zero volume part of the output domain.to the network we imported we added a few fully connected layers of our own.
+  
+   
   </li>
   
    <li>
