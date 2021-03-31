@@ -56,7 +56,7 @@ Flatten Layer -  flatten is used to flatten the input to a 1D vector then passed
  <li>
 Dense Layer - we have two dense layers, in the first we used the RELU activation function and in the second Dense layer (the output layer)  we used the  Sigmoid activation function.
   </li>
-   <br> <img src="report_images/fcn.png" hight="350 px"><br>
+   <br> <img src="report_images/fcn.png" hight="250 px"><br>
 
    
   </li>
