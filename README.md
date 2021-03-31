@@ -84,7 +84,7 @@ As a result, we concluded that we must decrease our hyperparameter - learning ra
 Due to the fact that we raised the number of epochs to 30 and decreased the learning rate to 0.0001 our model took two hours to process the data-set. while when the number of epochs was 15 and the learning rate was 0.5 it took the model 20 minutes to process the data.
 
 The change of the parameters led to improvement in the received outcomes when comparing the result shown below and above.
-
+  <br> <img src="report_images/loss.JPG"> <img src="report_images/acc.JPG"> <br>
 
 
   <h4>Fully Connected network</h4>
