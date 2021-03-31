@@ -85,6 +85,10 @@ Due to the fact that we raised the number of epochs to 30 and decreased the lear
 
 The change of the parameters led to improvement in the received outcomes when comparing the result shown below and above.
   <br> <img src="report_images/loss.JPG"> <img src="report_images/acc.JPG"> <br>
+As depicted in the graphs above, the loss function rate of the Validation is decreasing in accordance with the loss function of the Training set, which enables us to avoid the situation of over-fitting. 
+
+Finally, on our trained model, we tested the Test-set and printed every picture with a classified label of a person - wearing a mask or not.
+  <br> <img src="report_images/test_cnn.JPG"> <br>
 
 
   <h4>Fully Connected network</h4>
