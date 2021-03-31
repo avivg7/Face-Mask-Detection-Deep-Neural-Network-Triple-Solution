@@ -36,8 +36,8 @@ Flatten Layer -  flatten is used to flatten the input to a 1D vector then passed
   <li>
 Dense Layer (The output layer) - the units parameter means that it has 2 nodes one for with and one for without because we want a binary output.
 The activation parameter - we use the RELU and SIGMOID activation functions on our output so that the output for each sample is a probability distribution over the outputs of with and without mask.
-  </li>
-    <img src="report_images/unnamed.jpg">
+  </li> 
+   <br> <img src="report_images/unnamed.jpg"><br>
   </li>
   
    <li>
