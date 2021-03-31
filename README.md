@@ -63,6 +63,32 @@ Dense Layer - we have two dense layers, in the first we used the RELU activation
   
    <li>
     <h2>Training Process</h2>
+  <h4>CNN</h4>
+  In order to train our model, first we divided the data with augmentation in a way which assigned the Validation a minor part of the entire data - only 0.05, and the rest of the data served as the major training set- 0.95.
+In addition, we defined the value of our batch size and the epochs to be 8 and 15 respectively. We resize the input image into 70 x 70.
+  We used Adam optimizer, a stochastic gradient descent method  that updates the weights of the network after every single example. The amount that the weights are updated during training is referred to as the step size or the “Learning Rate”.
+The learning rate controls how quickly the model is adapted to the problem. 
+smaller learning rates require more training epochs given the smaller changes made to the weights each update, whereas larger learning rates result in rapid changes and require fewer training epochs.
+In the first try we selected a rather high learning rate. 
+  We used the Binary Cross-Entropy Loss also called Sigmoid Cross-Entropy loss. 
+It is a Sigmoid activation plus a Cross-Entropy loss which evaluates how good or bad the predicted probabilities are. If we fit a model to perform this classification, it will predict a probability of being faces with mask to each one of our images. 
+It should return high values for bad predictions and low values for good predictions.
+
+This caused our model to reach an unsatisfying solution.
+
+We calculated the success rate by using a counter and divided the number of successful identification by the total number of pictures in the test dataset.
+In this attempt we achieved a disappointing success rate of 48 percent.
+
+As a result, we concluded that we must decrease our hyperparameter - learning rate, and simultaneously raise the number of epochs, and so we increased the number of epochs from 15 to 30, which means we doubled the number of epochs which will allow our model a better learning process on the same data set.
+
+Due to the fact that we raised the number of epochs to 30 and decreased the learning rate to 0.0001 our model took two hours to process the data-set. while when the number of epochs was 15 and the learning rate was 0.5 it took the model 20 minutes to process the data.
+
+The change of the parameters led to improvement in the received outcomes when comparing the result shown below and above.
+
+
+
+  <h4>Fully Connected network</h4>
+  <h4>Transfer Learning</h4>
     example example example
   </li>
   
