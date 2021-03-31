@@ -47,6 +47,16 @@ One is a residual block with stride of 1. Another one is a block with stride of 
 There are 3 layers for both types of blocks.This time, the first layer is 1×1 convolution with ReLU6.	The second layer is the depthwise convolution.
 The third layer is another 1×1 convolution but without any non-linearity. It is claimed that if RELU is used again, the deep networks only have the power of a linear classifier on the non-zero volume part of the output domain.to the network we imported we added a few fully connected layers of our own.
   <br> <img src="report_images/mobile.JPG"> <br>
+  <b>The third configuration</b> we used is Fully Connected Network which consists of several fully connected hidden layers. 
+fully connected layer is a function from ℝ m to ℝ n. Each output dimension depends on each input dimension. 
+The Fully Connected Neural Network layers:
+<li>
+Flatten Layer -  flatten is used to flatten the input to a 1D vector then passed to dense.
+ </li>
+ <li>
+Dense Layer - we have two dense layers, in the first we used the RELU activation function and in the second Dense layer (the output layer)  we used the  Sigmoid activation function.
+  </li>
+
    
   </li>
   
