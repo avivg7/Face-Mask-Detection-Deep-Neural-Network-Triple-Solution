@@ -10,7 +10,10 @@ In this report you will find the complete process of solving this problem using 
   
   <li>
     <h2>Data Description</h2>
-    example example example
+    The data used for training the model contains 10,000 images which half of them shows a person with a face-mask and the other half non-masked faces.The data we are using contains a validation set, with 1000 pictures, 500 masked-faces and 500 non-masked faces.
+The third set, used for testing the model, contains 1000 pictures, 500 masked-faces and 500 non-masked faces.
+The data you can get for free from www.kaggle.com from the link <a href="https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset
+">Here</a>
   </li>
   
    <li>
