@@ -89,15 +89,35 @@ As depicted in the graphs above, the loss function rate of the Validation is dec
 
 Finally, on our trained model, we tested the Test-set and printed every picture with a classified label of a person - wearing a mask or not.
   <br> <img src="report_images/test_cnn.JPG"> <br>
+Again, we calculated the success rate on our Test-set and received a <b>succes rate of 94.65%</b>
 
 
   <h4>Fully Connected network</h4>
+  The configuration we used is Fully Connected Network, here as in the previous configurations, we decided to divide the data into 0.2 validation and 0.8 training-set. we augmented the images same as we did in the CNN model.
+  In the first try, we assigned 0.4 to the validation-set and 0.6 to the entire data-set.
+  In addition, we assigned the epochs and batch size to be 8 and 5 respectively, unlike the previous model who had 30 epochs. We resize the input image into 70 x 70 to deal with less parameters.
+  The network we built is made out of three layers:
+  <li>
+The Flatten Layer - it is used to flatten the input to a 1D vector then passed to dense.
+  </li>
+  <li>
+The Dense Layer - we have two dense layers, in the first we used the RELU activation function and in the second Dense layer (the output layer)  we used the  Sigmoid activation function.
+  </li>
+The outcome we received after training the inferior model was disappointing but the change of the parameters led to improvement in the received outcomes when comparing the result of satisfactory success rate of 74 percent (when related to simple fully connected network so it is considered for us to be a success .
+
   <h4>Transfer Learning</h4>
-    example example example
+    Before creating the mobileNetV2 network we augmented the part of the data and performed rescale, flip and zoom range. 
+we created a train generator and validation generator, both receive a 128*128 images, we then imported a built network with existing weights and added our own layers to this network and used the Sigmoid activation function. 
+We assigned the epochs and batch size to be 15 and 16 respectively, and decided to use Cross-Entropy Loss function in order to train the network. We resize the input image into 128 x 128.
+The training of the network showed 97% success rate on the test-data.
+
   </li>
   
    <li>
     <h2>Conclusion</h2>
-    example example example
+    In this project, we encountered the face-mask identification problem by implementing three configurations that were constantly improved in order to reach satisfying results in identification of masked faces and non masked faces. 
+We elaborated on the configuration architecture and presented a visualization of how each network is implemented.
+In addition, we broadly elaborated on the functionality of each configuration with screenshots of the training process attached to everyone of the processes we built. We used DL terminology and concepts that we learned during our DL course throughout the year by our supervisor Dr. Moshe Butman that assisted us to meet the demands required of us in this project and have the professional ability of explaining it in this report and broaden our knowledge in this fascinating field of expertise. 
+
   </li>
 </ul>
